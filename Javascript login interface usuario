@@ -1,0 +1,16 @@
+function login() {
+    // Obter os valores dos campos
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Validar os dados
+    if (username === '' || password === '') {
+        document.getElementById('message').textContent = 'Por favor, preencha todos os campos.';
+    } else {
+        // Simular o envio dos dados para um servidor
+        // Aqui você faria uma requisição AJAX para enviar os dados para um servidor
+        // e verificar a autenticação. Por enquanto, mostraremos uma mensagem simples.
+
+        document.getElementById('message').textContent = 'Login realizado com sucesso!';
+    }
+}
